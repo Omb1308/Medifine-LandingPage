@@ -71,9 +71,9 @@ main section {
   width: 25px;
 }
 
-.leftSection h1 {
+/* .leftSection h1 {
   font-size: 70px;
-}
+} */
 
 .leftSection p {
   color: #7c7c7c;
@@ -134,4 +134,41 @@ main section {
   right: 0;
   bottom: 0;
   height: 90%;
+}
+
+@media (max-width: 767px) {
+  .stethoscope,
+  .doctor,
+  .greenBox,
+  .yellowBox {
+    position: static;
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+
+
+h1 {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+/* Optional fallback for older browsers */
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+ 
+}
+
+.leftSection button {
+  font-size: 1.2rem;
+  padding: 0.75em 1.5em;
+}
+
+@media (min-width: 768px) {
+  .leftSection button {
+    font-size: 1.5rem;
+    padding: 1em 2em;
+  }
 }
